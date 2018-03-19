@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>
+      <%= @team_name %>
+    </h1>
+
+    <ol>
+      <% @players_array.each do |key, value| %>
+        <li><%="#{key} : #{value}" %></li>
+      <%end%>
+    </ol>
+
+    <a href="/teams">All teams</a>
+  </body>
+</html>
